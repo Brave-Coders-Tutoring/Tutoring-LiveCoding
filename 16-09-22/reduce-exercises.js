@@ -192,6 +192,5 @@ function iceCreamTotals(obj) {
   }, {});
 }
 
-console.log(
-  iceCreamTotals(data)
-); /*{  Strawberry: 3,  Vanilla: 4,  Chocolate: 5,  'Cookies & Cream': 2,  'Mint Chocolate Chip': 3,  'Rocky Road': 1,  Pistachio: 1,  Banana: 1,  'French Vanilla': 1,  'Vanilla Bean': 1}*/
+console.log(iceCreamTotals(data));
+/*{  Strawberry: 3,  Vanilla: 4,  Chocolate: 5,  'Cookies & Cream': 2,  'Mint Chocolate Chip': 3,  'Rocky Road': 1,  Pistachio: 1,  Banana: 1,  'French Vanilla': 1,  'Vanilla Bean': 1}*/

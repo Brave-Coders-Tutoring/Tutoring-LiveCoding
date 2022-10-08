@@ -23,9 +23,9 @@ const getUserDatas = async () => {
   }
 };
 
-button.addEventListener("click", () => {
-  getUserDatas();
-});
+// button.addEventListener("click", () => {
+//   getUserDatas();
+// });
 
 // const getUserDatas = async () => {
 //   console.log(fetch("https://jsonplaceholder.typicode.com/users"));
@@ -58,3 +58,17 @@ button.addEventListener("click", () => {
 // };
 
 // button.addEventListener("click", getUserDatas);
+
+const getImage = async () => {
+  const response = await fetch("https://jsonplaceholder.typicode.com/photos");
+  if (response.status === 200) {
+    const result = await response.json();
+    for (let i = 0; i < 10; i++) {
+      const img = document.createElement("img");
+      title.after(img);
+      img.src = result[i].url;
+    }
+  }
+};
+
+button.addEventListener("click", getImage);
